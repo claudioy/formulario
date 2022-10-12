@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="registro.css">
+    <meta charset="utf-8">
+    <title>Formulario de Registro</title>
+        
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor completá este formulario con la información requerida</p>
+    <form action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label for="nombre">Ingresá tu nombre: <input required  type="text" for="nombre" id="nombre"></label>
+            <label for="apellido">Ingresá tu apellido: <input required  type="text" for="apellido" id="apellido"></label>
+            <label for="email">Ingresá tu mail: <input required  type="email" for="email" id="email"></label>
+            <label for="password">Creá una nueva contraseña: <input required type="password" for="password" id="password" pattern="[a-z0-5]{8,}"></label>
+        </fieldset>
+        <fieldset></fieldset>
+        <label for="personal-account"><input class="inline"  type="radio" name="account-type" id="personal-account" for="personal-account" > Personal Account</label>
+        <label for="business-account"><input class="inline"  type="radio" name="account-type" id="business-account" for="business-account"> Business Account</label>
+        <label for="terms-and-conditions"><input class="inline"  required type="checkbox" id="terms-and-conditions" for="terms-and-conditions"> Acepto los <a href="blank">términos y condiciones</a></label>
+
+
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input name="file" id="profile-picture" for="profile-picture" type="file"></label>
+            <label for="age">Input your age (years): <input name="age" for="age" id="age" type="number" min=13 max=120></label>
+            <label for="referrer">How did you hear about us? <select for="referrer" id="referrer">
+                <option value="">(seleccioná una opción)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></label>
+        <label for="bio">Provide a bio: <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach...." id="bio" for="bio"></textarea></label>
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+</body>
+
+</html>
